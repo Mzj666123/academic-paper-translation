@@ -111,9 +111,9 @@ def add_paragraph_with_math(doc, text: str, font_name="宋体", size=12):
             inner = inner.replace(r'\\times', '×')
             inner = inner.replace(r'\\cdot', '·')
             inner = inner.replace(r'\\pi', 'π')
-            inner = inner.replace(r'\\mu', 'μ'
+            inner = inner.replace(r'\\mu', 'μ')
             inner = inner.replace(r'\\alpha', 'α')
-            inner = inner.replace(r'\\theta', 'θ'
+            inner = inner.replace(r'\\theta', 'θ')
             inner = inner.replace('\\', '')
 
             sub_match = re.match(r'^([a-zA-Z]+)_\{([^}]+)\}$', inner)
